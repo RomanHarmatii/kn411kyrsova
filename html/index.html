@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My landing page</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript"  src="../js/jquery.js"></script>
+    <script type="text/javascript"  src="../js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/registrationStyles.css">
+</head>
+<body>
+<header>
+    <nav class="container">
+        <a class="logo" href="">
+            <span>T</span>
+            <span>E</span>
+            <span>P</span>
+            <span>E</span>
+            <span>R</span>
+            <span>T</span>
+            <span>U</span>
+            <span>T</span>
+        </a>
+        <div class="nav-toggle"><span></span></div>
+        <ul id="menu">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Last events</a></li>
+
+        </ul>
+
+    </nav>
+</header>
+
+<div class="container">
+    <div id="slideshow">
+        <div class="slide-wrapper">
+            <div class="slide"><h1 class="slide-number"><img src="../images/photo1.jpg" alt="photo from tepertut"/></h1>
+            </div>
+            <div class="slide"><h1 class="slide-number"><img src="../images/photo2.jpg" alt="photo from tepertut 2"/></h1>
+            </div>
+            <div class="slide"><h1 class="slide-number"><img src="../images/photo3.jpg" alt="photo from tepertut 3"/></h1></div>
+            <div class="slide"><h1 class="slide-number"><img src="../images/photo4.jpg" alt="photo from tepertur 4"/></h1></div>
+            <div class="slide"><h1 class="slide-number"><img src="../images/photo5.jpg" alt="photo from tepertut 5"/></h1></div>
+
+        </div>
+    </div>
+
+    <div class="ticket_buy">
+        <h1>Buy ticket</h1>
+        <form id=registration_form action="#" method="post">
+            <ul>
+                <li><label for="name">Name:</label></li>
+                <li><input type="text" class="form_text" id="form_username" size=40>
+                    <span class="error_form" id="username_error_message"></span>
+                </li>
+                <li><label for="surname">Surname:</label></li>
+                <li><input type="text" class="form_text" id="form_surname" size=40>
+                    <span class="error_form" id="surname_error_message"></span></li>
+                <li>
+                    <label for="email">Email:</label></li>
+                <li><input type="text" class="form_text" id="form_email" size=40>
+                    <span class="error_form" id="email_error_message"></span>
+                </li>
+                <li>
+                    <label for="tickets_count">Tickets:</label></li>
+                <li><input type="text" class="form_text" id="form_tickets" size=40 value="1">
+                    <span class="error_form" id="tickets_error_message"></span>
+                </li>
+                <li>
+                    <label for="telephone_number">Telephone:</label>
+                </li>
+                <li><input type="text" class="form_text" id="form_phone" onkeydown="return checkPhoneKey(event.key)" size=40>
+                    <span class="error_form" id="phone_error_message"></span>
+                </li>
+                <li><input type="submit" class="sbmt_btn" id="submit" value="Buy"></li>
+            </ul>
+        </form>
+    </div>
+</div>
+<aside>
+    <div class="widget">
+        <form action="" method="post" id="subscribe">
+            <input type="email" name="email" placeholder="Підпишись на наші майбутні події" required>
+            <button type="submit"><i class="fa fa-paper-plane-o"></i></button>
+        </form>
+        <form>
+        <a href="tel:+1234567890"> Телефонуйте нам за інформацією! </a>
+        </form>
+    </div>
+</aside>
+<footer>
+    <div class="container">
+        <div class="footer-col"><span>© 2019</span></div>
+        <div class="footer-col">
+            <div class="social-bar-wrap">
+                <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+                <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <nav>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox"/>
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </nav>
+    </div>
+</footer>
+<script>
+    window.addEventListener("load", function(event) {
+        console.log("Page finished loading!");
+    });
+</script>
+<script src="../js/checkPhoneKey.js"></script>
+<script src="../js/confirmScript.js"></script>
+<script src="../js/showMenu.js"></script>
+<script src="../js/changeTheme.js"></script>
+</body>
+</html>
